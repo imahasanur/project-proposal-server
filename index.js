@@ -122,7 +122,7 @@ client.connect(err => {
   // client.close();
 });
 
-app.listen(port || process.env.PORT, () => {
+app.listen( process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
